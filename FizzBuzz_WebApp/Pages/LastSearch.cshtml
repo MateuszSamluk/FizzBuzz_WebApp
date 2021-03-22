@@ -1,0 +1,12 @@
+﻿@page
+@model FizzBuzz_WebApp.Pages.LastSearchModel
+@{
+}
+<p>Ostatnio wyszukiwane liczby: </p>@if (Model.Number != null)
+{
+    <p>@Html.DisplayNameFor(model => Model.Number.UserNumber):@Model.Number.UserNumber </p>
+    <p>@Html.DisplayNameFor(model => Model.Feedback):@Model.Feedback </p>
+    <p>@Html.DisplayNameFor(model => Model.Time):@Model.Time </p>
+}
+
+
