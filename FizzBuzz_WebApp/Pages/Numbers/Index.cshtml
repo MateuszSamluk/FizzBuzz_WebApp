@@ -1,0 +1,35 @@
+﻿@page
+@model FizzBuzz_WebApp.Pages.Numbers.IndexModel
+
+@{
+    ViewData["Title"] = "Numbers";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Number[0].UserNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Number) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserNumber)
+            </td>
+            <td>
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

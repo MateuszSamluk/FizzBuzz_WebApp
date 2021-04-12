@@ -1,0 +1,13 @@
+﻿@page
+@model FizzBuzz_WebApp.Pages.DataBase_Last10Model
+@{
+}
+
+<div class="text-center">
+  
+        @foreach (var item in Model.Numbers)
+        { <p>@Html.DisplayFor(modelItem => item.Id) .
+             @Html.DisplayFor(modelItem => item.UserNumber)
+          </p>
+         }
+</div>
