@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "FizzBuzz_WebAppContextConnection"
+    },
+    "mssql2": {
+      "type": "mssql.local",
+      "connectionId": "FizzBuzz_WebAppDBContextConnection"
+    }
+  }
+}

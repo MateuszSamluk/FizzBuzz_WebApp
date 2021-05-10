@@ -3,11 +3,14 @@
 @{
 }
 
+         
+
 <div class="text-center">
-  
-        @foreach (var item in Model.Numbers)
-        { <p>@Html.DisplayFor(modelItem => item.Id) .
-             @Html.DisplayFor(modelItem => item.UserNumber)
-          </p>
-         }
+
+    @foreach (var item in Model.Numbers)
+    {<p>
+            @Html.DisplayFor(modelItem => item.Id) .
+    @Html.DisplayFor(modelItem => item.UserNumber)
+</p>
+}
 </div>
